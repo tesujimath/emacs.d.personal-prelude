@@ -71,6 +71,7 @@
              (define-key org-mode-map (kbd "C-c C-h") 'hide-sublevels)
              (define-key org-mode-map (kbd "`") 'tesujimath/org-insert-tilde)
              (turn-on-flyspell)
+             (setq-local whitespace-line-column 1000)
              ))
 
 (defun tesujimath/org-insert-tilde ()
