@@ -6,20 +6,23 @@
  '(custom-safe-themes
    '("6fc9e40b4375d9d8d0d9521505849ab4d04220ed470db0b78b700230da0a86c1" default))
  '(magit-diff-refine-hunk 'all)
+ '(org-agenda-files '("~/vc/notes/hpc-migration.org"))
  '(org-capture-templates
    '(("L" "Link" entry
       (file+headline "resources.org" "Unclassified")
       "** TODO %:description\\n%:link\\n%?")
-     ("p" "Link" entry (file+headline "resources.org" "Unclassified")
-      "** TODO %:description\n%:link\n\n%i\n%?")
-
-     ("t" "Todo" entry (file+headline "" "Tasks")
-      "* TODO %?\n  %i\n  %a")
-     ("!" "Ideas" entry (file+headline "" "Ideas")
-      "* %?\nEntered on %U\n  %i\n  %a")
-     ("j" "Journal" entry (file+headline  "Journal")
-      "* %?\nEntered on %U\n  %i\n  %a")
-     ))
+     ("p" "Link" entry
+      (file+headline "resources.org" "Unclassified")
+      "** TODO %:description\12%:link\12\12%i\12%?")
+     ("t" "Todo" entry
+      (file+headline "" "Tasks")
+      "* TODO %?\12  %i\12  %a")
+     ("!" "Ideas" entry
+      (file+headline "" "Ideas")
+      "* %?\12Entered on %U\12  %i\12  %a")
+     ("j" "Journal" entry
+      (file+headline "Journal")
+      "* %?\12Entered on %U\12  %i\12  %a")))
  '(org-default-notes-file "~/mobile/notes/inbox.org")
  '(org-directory "~/mobile/notes")
  '(org-todo-keywords
