@@ -14,6 +14,9 @@
 
 (require 'org-protocol)
 
+;; for structure template expansion
+(require 'org-tempo)
+
 ;; export timestamps without brackets
 ;; http://stackoverflow.com/questions/23297422/org-mode-timestamp-format-when-exported
 (defun tesujimath/org-export-filter-timestamp-remove-brackets (timestamp backend info)
