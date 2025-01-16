@@ -6,6 +6,7 @@
  '(custom-safe-themes
    '("6fc9e40b4375d9d8d0d9521505849ab4d04220ed470db0b78b700230da0a86c1" default))
  '(magit-diff-refine-hunk 'all)
+ '(magit-display-buffer-function 'magit-display-buffer-same-window-except-diff-v1)
  '(org-capture-templates
    '(("L" "Link" entry
       (file+headline "resources.org" "Unclassified")
