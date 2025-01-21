@@ -9,6 +9,7 @@
 
 (with-eval-after-load "clipetty"
   (global-clipetty-mode)
+  (setq select-active-regions nil)
   )
 
 (provide 'init-clipetty)
