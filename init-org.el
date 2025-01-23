@@ -17,6 +17,19 @@
 ;; for structure template expansion
 (require 'org-tempo)
 
+;;; header line format lifted with thanks from:
+;;; https://github.com/purcell/emacs.d/blob/master/lisp/init-org.el
+;;; Show the clocked-in task - if any - in the header line
+(defun tesujimath/show-org-clock-in-header-line ()
+  (setq-default header-line-format '((" " org-mode-line-string " "))))
+
+(defun tesujimath/hide-org-clock-from-header-line ()
+  (setq-default header-line-format nil))
+
+(add-hook 'org-clock-in-hook 'tesujimath/show-org-clock-in-header-line)
+(add-hook 'org-clock-out-hook 'tesujimath/hide-org-clock-from-header-line)
+(add-hook 'org-clock-cancel-hook 'tesujimath/hide-org-clock-from-header-line)
+
 ;; export timestamps without brackets
 ;; http://stackoverflow.com/questions/23297422/org-mode-timestamp-format-when-exported
 (defun tesujimath/org-export-filter-timestamp-remove-brackets (timestamp backend info)
