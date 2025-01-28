@@ -11,16 +11,18 @@
    '(("L" "Link" entry
       (file+headline "resources.org" "Unclassified")
       "** TODO %:description\\n%:link\\n%?")
-     ("p" "Link" entry (file+headline "resources.org" "Unclassified")
-      "** TODO %:description\n%:link\n\n%i\n%?")
-
-     ("t" "Todo" entry (file+headline "" "Tasks")
-      "* TODO %?\n  %i\n  %a")
-     ("!" "Ideas" entry (file+headline "" "Ideas")
-      "* %?\nEntered on %U\n  %i\n  %a")
-     ("j" "Journal" entry (file+headline  "Journal")
-      "* %?\nEntered on %U\n  %i\n  %a")
-     ))
+     ("p" "Link" entry
+      (file+headline "resources.org" "Unclassified")
+      "** TODO %:description\12%:link\12\12%i\12%?")
+     ("t" "Todo" entry
+      (file+headline "" "Tasks")
+      "* TODO %?\12  %i\12  %a")
+     ("!" "Ideas" entry
+      (file+headline "" "Ideas")
+      "* %?\12Entered on %U\12  %i\12  %a")
+     ("j" "Journal" entry
+      (file+headline "Journal")
+      "* %?\12Entered on %U\12  %i\12  %a")))
  '(org-default-notes-file "~/mobile/notes/inbox.org")
  '(org-directory "~/mobile/notes")
  '(org-todo-keywords
@@ -28,7 +30,7 @@
      (sequence "IN-PROGRESS(i!)" "WAITING(w@/!)" "|" "DONE(d!/!)" "CANCELLED(c@/!)")
      (sequence "WAITING(w@/!)" "IN-PROGRESS(i!)" "|" "CANCELLED(c@/!)")))
  '(package-selected-packages
-   '(clipetty color-theme-sanityinc-tomorrow envrc deadgrep clojure-mode yaml-mode web-mode lsp-ui lsp-mode json-mode js2-mode rainbow-mode elisp-slime-nav rainbow-delimiters company consult orderless vertico exec-path-from-shell zop-to-char zenburn-theme which-key volatile-highlights undo-tree super-save smartrep smartparens operate-on-number nlinum move-text magit projectile imenu-anywhere hl-todo guru-mode git-modes git-timemachine gist flycheck expand-region epl editorconfig easy-kill diminish diff-hl discover-my-major crux browse-kill-ring anzu ag ace-window emacsql-sqlite))
+   '(ledger-mode flycheck-ledger clipetty color-theme-sanityinc-tomorrow envrc deadgrep clojure-mode yaml-mode web-mode lsp-ui lsp-mode json-mode js2-mode rainbow-mode elisp-slime-nav rainbow-delimiters company consult orderless vertico exec-path-from-shell zop-to-char zenburn-theme which-key volatile-highlights undo-tree super-save smartrep smartparens operate-on-number nlinum move-text magit projectile imenu-anywhere hl-todo guru-mode git-modes git-timemachine gist flycheck expand-region epl editorconfig easy-kill diminish diff-hl discover-my-major crux browse-kill-ring anzu ag ace-window emacsql-sqlite))
  '(whitespace-line-column 1000)
  '(xterm-mouse-mode t))
 (custom-set-faces
