@@ -7,10 +7,8 @@
 ;; for use inside Alacritty on WSL
 (prelude-require-package 'clipetty)
 
-(with-eval-after-load "clipetty"
-  (global-clipetty-mode)
-  (setq select-active-regions nil)
-  )
+(global-clipetty-mode 1)
+(setq select-active-regions nil)
 
 (provide 'init-clipetty)
 ;;; init-clipetty.el ends here
