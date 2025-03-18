@@ -44,15 +44,6 @@
                        'org-export-filter-timestamp-functions
                        'tesujimath/org-export-filter-timestamp-remove-brackets))
 
-(defun tesujimath/clean-region (start end) (interactive "r")
-       "clean region"
-       (if (use-region-p)
-           (progn ( message "Cleaning region active from %d to %d" start end)
-                  ;; remove Zellij pane bars
-                  ;;(replace-regexp "^\\||\\|$" "" nil start end)
-                  (replace-regexp "\\(^│\\)\\|\\(│$\\)" "" nil start end)
-                  )))
-
 (require 'foldout)
 (add-hook 'org-mode-hook
           '(lambda ()
@@ -66,7 +57,6 @@
                                                        (interactive "")
                                                        (foldout-exit-fold 0)
                                                        ))
-               (define-key org-mode-m-map (kbd "c") 'tesujimath/clean-region)
                )
              (define-key org-mode-map (kbd "C-c 1") '(lambda ()
                                                        (interactive "")
