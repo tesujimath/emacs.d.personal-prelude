@@ -7,6 +7,7 @@
    '("6fc9e40b4375d9d8d0d9521505849ab4d04220ed470db0b78b700230da0a86c1" default))
  '(magit-diff-refine-hunk 'all)
  '(magit-display-buffer-function 'magit-display-buffer-same-window-except-diff-v1)
+ '(org-agenda-files '("~/vc/agr/notes/hpc-migration.org"))
  '(org-capture-templates
    '(("L" "Link" entry
       (file+headline "resources.org" "Unclassified")
@@ -30,7 +31,7 @@
      (sequence "IN-PROGRESS(i!)" "WAITING(w@/!)" "|" "DONE(d!/!)" "CANCELLED(c@/!)")
      (sequence "WAITING(w@/!)" "IN-PROGRESS(i!)" "|" "CANCELLED(c@/!)")))
  '(package-selected-packages
-   '(ledger-mode flycheck-ledger clipetty color-theme-sanityinc-tomorrow envrc deadgrep clojure-mode yaml-mode web-mode lsp-ui lsp-mode json-mode js2-mode rainbow-mode elisp-slime-nav rainbow-delimiters company consult orderless vertico exec-path-from-shell zop-to-char zenburn-theme which-key volatile-highlights undo-tree super-save smartrep smartparens operate-on-number nlinum move-text magit projectile imenu-anywhere hl-todo guru-mode git-modes git-timemachine gist flycheck expand-region epl editorconfig easy-kill diminish diff-hl discover-my-major crux browse-kill-ring anzu ag ace-window emacsql-sqlite))
+   '(bnf-mode rust-mode beancount beancount-mode protobuf-mode ledger-mode flycheck-ledger clipetty color-theme-sanityinc-tomorrow envrc deadgrep clojure-mode yaml-mode web-mode lsp-ui lsp-mode json-mode js2-mode rainbow-mode elisp-slime-nav rainbow-delimiters company consult orderless vertico exec-path-from-shell zop-to-char zenburn-theme which-key volatile-highlights undo-tree super-save smartrep smartparens operate-on-number nlinum move-text magit projectile imenu-anywhere hl-todo guru-mode git-modes git-timemachine gist flycheck expand-region epl editorconfig easy-kill diminish diff-hl discover-my-major crux browse-kill-ring anzu ag ace-window emacsql-sqlite))
  '(whitespace-line-column 1000)
  '(xterm-mouse-mode t))
 (custom-set-faces
