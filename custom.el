@@ -33,7 +33,7 @@
  '(org-capture-templates
    '(("L" "Link" entry
       (file+headline "resources.org" "Unclassified")
-      "** TODO %:description\\n%:link\\n%?")
+      "** TODO %:description\12%:link\12%?")
      ("p" "Link" entry
       (file+headline "resources.org" "Unclassified")
       "** TODO %:description\12%:link\12\12%i\12%?")
