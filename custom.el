@@ -26,6 +26,8 @@
       "%(binary) -f %(ledger-file) bal ^income and not ^income:investment ^expenses and not ^expenses:dividends ^liabilities and not ^liabilities:gst -b 2022/4/1 -e 2023/4/1")
      ("tax 2023/24 with RWT"
       "%(binary) -f %(ledger-file) bal ^income and not ^income:investment ^expenses and not ^expenses:dividends ^liabilities and not ^liabilities:gst ^assets:accounts-receivable -b 2023/4/1 -e 2024/4/1")
+     ("tax 2024/25 with RWT"
+      "%(binary) -f %(ledger-file) bal ^income and not ^income:investment ^expenses and not ^expenses:dividends ^liabilities and not ^liabilities:gst ^assets:accounts-receivable -b 2024/4/1 -e 2025/4/1")
      ("donations not other 2022/23"
       "%(binary) -f %(ledger-file) bal -b 2022-04-01 -e 2023-04-01 ^expenses:donations and not ^expenses:donations:other")
      ("donations total 2022/23"
@@ -44,7 +46,9 @@
  '(magit-diff-refine-hunk 'all)
  '(magit-display-buffer-function 'magit-display-buffer-same-window-except-diff-v1)
  '(org-agenda-files
-   '( "~/mobile/notes/inbox.org" "~/mobile/notes/areas.org" "~/mobile/notes/projects.org" "~/mobile/notes/o-my-soul.org" "~/mobile/notes/resources.org"))
+   '("~/mobile/notes/inbox.org" "~/mobile/notes/areas.org"
+     "~/mobile/notes/projects.org" "~/mobile/notes/o-my-soul.org"
+     "~/mobile/notes/resources.org"))
  '(org-capture-templates
    '(("L" "Link" entry (file+headline "resources.org" "Unclassified")
       "** TODO %:description\12%:link\12%?")
