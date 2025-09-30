@@ -74,7 +74,7 @@
      (sequence "WAITING(w@/!)" "IN-PROGRESS(i!)" "|" "CANCELLED(c@/!)")))
  '(package-selected-packages
    '(ace-window ag anzu beancount bnf-mode browse-kill-ring cdlatex cider
-                clipetty color-theme-sanityinc-tomorrow
+                clipetty clj-refactor color-theme-sanityinc-tomorrow
                 company-anaconda company-auctex consult crux csv-mode
                 deadgrep diff-hl diminish discover-my-major easy-kill
                 editorconfig elisp-slime-nav envrc epl
@@ -82,9 +82,10 @@
                 gist git-modes git-timemachine guru-mode hl-todo
                 imenu-anywhere js2-mode json-mode ledger-mode lsp-ui
                 magit move-text nlinum operate-on-number orderless
-                projectile protobuf-mode racket-mode
-                rainbow-delimiters rainbow-mode rust-mode scss-mode
-                smartparens smartrep super-save undo-tree vertico
+                projectile protobuf-mode quelpa quelpa-use-package
+                racket-mode rainbow-delimiters rainbow-mode rust-mode
+                scss-mode smartparens smartrep super-save
+                typed-clojure-mode undo-tree vertico
                 volatile-highlights web-mode which-key yaml-mode
                 zenburn-theme zop-to-char))
  '(safe-local-variable-values '((scheme-program-name . "lima")))
