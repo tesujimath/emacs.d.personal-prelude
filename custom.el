@@ -88,7 +88,8 @@
                 typed-clojure-mode undo-tree vertico
                 volatile-highlights web-mode which-key yaml-mode
                 zenburn-theme zop-to-char))
- '(safe-local-variable-values '((scheme-program-name . "lima")))
+ '(safe-local-variable-values
+   '((scheme-program-name . "steel-perf") (scheme-program-name . "lima")))
  '(whitespace-line-column 1000)
  '(xterm-mouse-mode t))
 (custom-set-faces

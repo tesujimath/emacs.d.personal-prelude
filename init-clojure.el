@@ -13,7 +13,6 @@
 (prelude-require-package 'clj-refactor)
 
 (defun tesujimath/clojure-mode-hook ()
-  (setq cider-clojure-cli-parameters "-A:cider") ; to use cider alias in deps.edn
   (setq cljr-warn-on-eval nil)                   ; don't warn when doing refactoring
   (clj-refactor-mode 1)
   (yas-minor-mode 1) ; for adding require/use/import statements
