@@ -46,10 +46,7 @@
      ("unknown all" "%(binary) -f %(ledger-file) reg Unknown")))
  '(magit-diff-refine-hunk 'all)
  '(magit-display-buffer-function 'magit-display-buffer-same-window-except-diff-v1)
- '(org-agenda-files
-   '("~/mobile/notes/inbox.org" "~/mobile/notes/areas.org"
-     "~/mobile/notes/projects.org" "~/mobile/notes/o-my-soul.org"
-     "~/mobile/notes/resources.org"))
+ '(org-agenda-files '("~/vc/notes/hpc-migration.org"))
  '(org-capture-templates
    '(("L" "Link" entry (file+headline "resources.org" "Unclassified")
       "** TODO %:description\12%:link\12%?")
