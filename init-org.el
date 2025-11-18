@@ -17,9 +17,10 @@
 ;; for structure template expansion
 (require 'org-tempo)
 
-(quelpa
- `(org-wc :fetcher file
-          :path ,(expand-file-name "~/vc/tesujimath/org-wc/org-wc.el")))
+;; quelpa is broken on kiri
+;; (quelpa
+;;  `(org-wc :fetcher file
+;;           :path ,(expand-file-name "~/vc/tesujimath/org-wc/org-wc.el")))
 
 ;;; header line format lifted with thanks from:
 ;;; https://github.com/purcell/emacs.d/blob/master/lisp/init-org.el

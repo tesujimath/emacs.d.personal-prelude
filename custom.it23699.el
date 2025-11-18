@@ -4,9 +4,12 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(beancount-number-alignment-column 79)
+ '(blink-cursor-mode nil)
+ '(column-number-mode t)
  '(custom-safe-themes
    '("6fc9e40b4375d9d8d0d9521505849ab4d04220ed470db0b78b700230da0a86c1"
      default))
+ '(global-display-line-numbers-mode t)
  '(ledger-reports
    '(("bal" "%(binary) -f %(ledger-file) bal ^assets ^liabilities")
      ("bal-cleared"
@@ -72,24 +75,11 @@
      (sequence "IN-PROGRESS(i!)" "WAITING(w@/!)" "|" "DONE(d!/!)"
                "CANCELLED(c@/!)")
      (sequence "WAITING(w@/!)" "IN-PROGRESS(i!)" "|" "CANCELLED(c@/!)")))
- '(package-selected-packages
-   '(ace-window ag anzu beancount bnf-mode browse-kill-ring cdlatex cider
-                clipetty clj-refactor color-theme-sanityinc-tomorrow
-                company-anaconda company-auctex consult crux csv-mode
-                deadgrep diff-hl diminish discover-my-major easy-kill
-                editorconfig elisp-slime-nav envrc epl
-                exec-path-from-shell expand-region flycheck-ledger
-                gist git-modes git-timemachine guru-mode hl-todo
-                imenu-anywhere js2-mode json-mode ledger-mode lsp-ui
-                magit move-text nlinum operate-on-number orderless
-                projectile protobuf-mode quelpa quelpa-use-package
-                racket-mode rainbow-delimiters rainbow-mode rust-mode
-                scss-mode smartparens smartrep super-save
-                typed-clojure-mode undo-tree vertico
-                volatile-highlights web-mode which-key yaml-mode
-                zenburn-theme zop-to-char))
+ '(package-selected-packages nil)
  '(safe-local-variable-values
    '((scheme-program-name . "steel-perf") (scheme-program-name . "lima")))
+ '(size-indication-mode t)
+ '(tool-bar-mode nil)
  '(whitespace-line-column 1000)
  '(xterm-mouse-mode t))
 (custom-set-faces
@@ -97,5 +87,4 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Source Code Pro" :foundry "ADBO" :slant normal :weight semi-bold :height 160 :width normal))))
  '(mouse ((t (:background "white smoke")))))
