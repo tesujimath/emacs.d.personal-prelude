@@ -47,6 +47,7 @@
      ("unknown income recent"
       "%(binary) -f %(ledger-file) reg Unknown --limit 'amount<0' -b 2019/01/01")
      ("unknown all" "%(binary) -f %(ledger-file) reg Unknown")))
+ '(line-spacing 3)
  '(magit-diff-refine-hunk 'all)
  '(magit-display-buffer-function 'magit-display-buffer-same-window-except-diff-v1)
  '(org-agenda-files
