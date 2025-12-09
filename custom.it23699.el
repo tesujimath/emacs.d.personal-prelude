@@ -75,7 +75,21 @@
      (sequence "IN-PROGRESS(i!)" "WAITING(w@/!)" "|" "DONE(d!/!)"
                "CANCELLED(c@/!)")
      (sequence "WAITING(w@/!)" "IN-PROGRESS(i!)" "|" "CANCELLED(c@/!)")))
- '(package-selected-packages nil)
+ '(package-selected-packages
+   '(ace-window ag anzu beancount bnf-mode browse-kill-ring cdlatex
+                clipetty clj-refactor color-theme-sanityinc-tomorrow
+                company-anaconda company-auctex consult crux deadgrep
+                diff-hl diminish discover-my-major easy-kill
+                editorconfig elisp-slime-nav envrc
+                exec-path-from-shell expand-region flycheck-ledger
+                geiser gist git-modes git-timemachine guru-mode
+                hl-todo imenu-anywhere json-mode ledger-mode lsp-ui
+                lua-mode magit move-text nlinum operate-on-number
+                orderless projectile puppet-mode quelpa-use-package
+                racket-mode rainbow-delimiters rainbow-mode
+                smartparens smartrep super-save undo-tree vertico
+                volatile-highlights web-mode which-key yaml-mode
+                zenburn-theme zop-to-char))
  '(safe-local-variable-values
    '((scheme-program-name . "steel-perf") (scheme-program-name . "lima")))
  '(size-indication-mode t)
