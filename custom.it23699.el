@@ -47,12 +47,10 @@
      ("unknown income recent"
       "%(binary) -f %(ledger-file) reg Unknown --limit 'amount<0' -b 2019/01/01")
      ("unknown all" "%(binary) -f %(ledger-file) reg Unknown")))
+ '(line-spacing 3)
  '(magit-diff-refine-hunk 'all)
  '(magit-display-buffer-function 'magit-display-buffer-same-window-except-diff-v1)
- '(org-agenda-files
-   '("~/mobile/notes/inbox.org" "~/mobile/notes/areas.org"
-     "~/mobile/notes/projects.org" "~/mobile/notes/o-my-soul.org"
-     "~/mobile/notes/resources.org"))
+ '(org-agenda-files '("~/vc/notes/hpc-migration.org"))
  '(org-capture-templates
    '(("L" "Link" entry (file+headline "resources.org" "Unclassified")
       "** TODO %:description\12%:link\12%?")
@@ -101,4 +99,5 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(default ((t (:family "Source Code Pro" :foundry "ADBO" :slant normal :weight semi-bold :height 160 :width normal))))
  '(mouse ((t (:background "white smoke")))))
