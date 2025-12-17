@@ -5,6 +5,7 @@
  ;; If there is more than one, they won't work right.
  '(beancount-number-alignment-column 79)
  '(blink-cursor-mode nil)
+ '(cider-use-tooltips nil)
  '(column-number-mode t)
  '(custom-safe-themes
    '("6fc9e40b4375d9d8d0d9521505849ab4d04220ed470db0b78b700230da0a86c1"
