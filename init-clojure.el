@@ -21,5 +21,10 @@
 
 (add-hook 'clojure-mode-hook #'tesujimath/clojure-mode-hook)
 
+;; Clojure autoformat using zprint
+;; zprint -c: read config from project if present
+(eval-after-load 'apheleia '(progn (push '(zprint . ("zprint")) apheleia-formatters)
+                                   (setf (alist-get 'clojure-mode apheleia-mode-alist) 'zprint)))
+
 (provide 'init-clojure)
 ;;; init-clojure.el ends here
