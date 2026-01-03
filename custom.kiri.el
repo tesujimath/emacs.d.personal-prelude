@@ -81,16 +81,17 @@
    '(ace-window ag anzu apheleia beancount bnf-mode browse-kill-ring
                 cdlatex clipetty clj-refactor
                 color-theme-sanityinc-tomorrow company-anaconda
-                company-auctex consult crux deadgrep diff-hl diminish
-                discover-my-major easy-kill elisp-slime-nav envrc epl
-                exec-path-from-shell expand-region flycheck-ledger
-                geiser gist git-modes git-timemachine guru-mode
-                hl-todo imenu-anywhere ledger-mode lsp-ui lua-mode
-                magit move-text nlinum operate-on-number orderless
-                projectile racket-mode rainbow-delimiters rainbow-mode
-                rust-mode smartparens smartrep super-save undo-tree
-                vertico volatile-highlights web-mode yaml-mode
-                zenburn-theme zop-to-char))
+                company-auctex consult crux csv-mode deadgrep diff-hl
+                diminish discover-my-major easy-kill elisp-slime-nav
+                envrc epl exec-path-from-shell expand-region
+                flycheck-ledger geiser gist git-modes git-timemachine
+                guru-mode hl-todo imenu-anywhere json-mode ledger-mode
+                lsp-ui lua-mode magit move-text nlinum
+                operate-on-number orderless projectile racket-mode
+                rainbow-delimiters rainbow-mode rust-mode smartparens
+                smartrep super-save undo-tree vertico
+                volatile-highlights web-mode yaml-mode zenburn-theme
+                zop-to-char))
  '(safe-local-variable-values
    '((scheme-program-name . "steel-perf") (scheme-program-name . "lima")))
  '(size-indication-mode t)
