@@ -51,6 +51,8 @@
  '(line-spacing 3)
  '(magit-diff-refine-hunk 'all)
  '(magit-display-buffer-function 'magit-display-buffer-same-window-except-diff-v1)
+ '(nxml-attribute-indent 2)
+ '(nxml-child-indent 2)
  '(org-agenda-files
    '("~/mobile/notes/inbox.org" "~/mobile/notes/areas.org"
      "~/mobile/notes/projects.org" "~/mobile/notes/o-my-soul.org"
