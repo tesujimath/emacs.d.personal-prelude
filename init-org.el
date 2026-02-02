@@ -45,9 +45,9 @@
    ((org-export-derived-backend-p backend 'html)
     (replace-regexp-in-string "&[lg]t;\\|[][]" "" timestamp))))
 
-(eval-after-load 'ox '(add-to-list
-                       'org-export-filter-timestamp-functions
-                       'tesujimath/org-export-filter-timestamp-remove-brackets))
+(with-eval-after-load 'ox (add-to-list
+                           'org-export-filter-timestamp-functions
+                           'tesujimath/org-export-filter-timestamp-remove-brackets))
 
 (require 'foldout)
 (add-hook 'org-mode-hook

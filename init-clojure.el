@@ -12,6 +12,8 @@
 
 (prelude-require-package 'clj-refactor)
 
+(prelude-require-package 'flycheck-clj-kondo)
+
 (defun tesujimath/clojure-mode-hook ()
   (setq cljr-warn-on-eval nil)                   ; don't warn when doing refactoring
   (clj-refactor-mode 1)
@@ -23,8 +25,11 @@
 
 ;; Clojure autoformat using zprint
 ;; zprint -c: read config from project if present
-(eval-after-load 'apheleia '(progn (push '(zprint . ("zprint" "{:fn-map {\"f/attempt-all\" :binding, \"prop/for-all\" :binding}}")) apheleia-formatters)
-                                   (setf (alist-get 'clojure-mode apheleia-mode-alist) 'zprint)))
+(with-eval-after-load 'apheleia  (push '(zprint . ("zprint" "{:fn-map {\"f/attempt-all\" :binding, \"prop/for-all\" :binding}}")) apheleia-formatters)
+                      (setf (alist-get 'clojure-mode apheleia-mode-alist) 'zprint))
+
+(with-eval-after-load 'flycheck
+  (require 'flycheck-clj-kondo))
 
 (provide 'init-clojure)
 ;;; init-clojure.el ends here
