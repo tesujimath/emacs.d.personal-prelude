@@ -14,12 +14,19 @@
 
 (prelude-require-package 'flycheck-clj-kondo)
 
+(defun tesujimath/lint-clj-project ()
+  "Run clj-kondo --lint on the project and show results in a compilation buffer."
+  (interactive)
+  (let* ((default-directory (locate-dominating-file default-directory "deps.edn")))
+    (compile "clj-kondo --lint src test")))
+
 (defun tesujimath/clojure-mode-hook ()
   (setq cljr-warn-on-eval nil)                   ; don't warn when doing refactoring
   (clj-refactor-mode 1)
   (yas-minor-mode 1) ; for adding require/use/import statements
   ;; This choice of keybinding leaves cider-macroexpand-1 unbound
-  (cljr-add-keybindings-with-prefix "C-c C-m"))
+  (cljr-add-keybindings-with-prefix "C-c C-m")
+  (local-set-key (kbd "C-c `") #'tesujimath/lint-clj-project))
 
 (add-hook 'clojure-mode-hook #'tesujimath/clojure-mode-hook)
 
