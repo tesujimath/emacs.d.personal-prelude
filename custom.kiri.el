@@ -86,14 +86,14 @@
                 company-auctex consult crux csv-mode deadgrep diff-hl
                 diminish discover-my-major easy-kill elisp-slime-nav
                 envrc epl exec-path-from-shell expand-region
-                flycheck-ledger geiser gist git-modes git-timemachine
-                guru-mode hl-todo imenu-anywhere json-mode ledger-mode
-                lsp-ui lua-mode magit move-text nlinum
-                operate-on-number orderless projectile racket-mode
-                rainbow-delimiters rainbow-mode rust-mode smartparens
-                smartrep super-save undo-tree vertico
-                volatile-highlights web-mode yaml-mode zenburn-theme
-                zop-to-char))
+                flycheck-clj-kondo flycheck-ledger flymake-clj-kondo
+                geiser gist git-modes git-timemachine gptel guru-mode
+                hl-todo imenu-anywhere json-mode ledger-mode lsp-ui
+                lua-mode magit move-text nlinum operate-on-number
+                orderless projectile racket-mode rainbow-delimiters
+                rainbow-mode rust-mode smartparens smartrep super-save
+                undo-tree vertico volatile-highlights web-mode
+                yaml-mode zenburn-theme zop-to-char))
  '(safe-local-variable-values
    '((scheme-program-name . "steel-perf") (scheme-program-name . "lima")))
  '(size-indication-mode t)
